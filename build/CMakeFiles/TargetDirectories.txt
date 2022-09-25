@@ -1,0 +1,6 @@
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/benchmark.dir
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/benchmark-basic.dir
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/benchmark-blas.dir
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/benchmark-openmp.dir
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/edit_cache.dir
+/home/gator/HPC/HW3/vmmul-harness-instructional/build/CMakeFiles/rebuild_cache.dir
