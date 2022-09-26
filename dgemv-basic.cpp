@@ -1,3 +1,8 @@
+/*Name: Tanishq Pradhan
+SFSU ID: 922243982
+Date: 09/25/2022
+CSC 746 HW 3*/
+
 const char* dgemv_desc = "Basic implementation of matrix-vector multiply.";
 
 /*
