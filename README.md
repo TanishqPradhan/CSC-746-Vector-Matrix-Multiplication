@@ -83,7 +83,7 @@ environment variables that are relevant to HW3 and Cori@NERSC.
 
 
 # Results
-
+```
 Basic Vector-Matrix Multiplication:
 Description:	Basic implementation of matrix-vector multiply.
 
@@ -315,3 +315,4 @@ Working on problem size N=8192
  Elapsed time is : 0.0216075 
 Working on problem size N=16384 
  Elapsed time is : 0.0201811 
+```
