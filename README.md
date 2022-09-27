@@ -82,4 +82,236 @@ These sample job scripts have some reference values and tips for managing OpenMP
 environment variables that are relevant to HW3 and Cori@NERSC.
 
 
-#eof
+# Results
+
+Basic Vector-Matrix Multiplication:
+Description:	Basic implementation of matrix-vector multiply.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00449559 
+Working on problem size N=2048 
+ Elapsed time is : 0.0180013 
+Working on problem size N=4096 
+ Elapsed time is : 0.0719027 
+Working on problem size N=8192 
+ Elapsed time is : 0.287621 
+Working on problem size N=16384 
+ Elapsed time is : 1.15421 
+
+CBLAS Vector-Matrix Multiplication:
+Description:	Reference dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00522704 
+Working on problem size N=2048 
+ Elapsed time is : 0.00332148 
+Working on problem size N=4096 
+ Elapsed time is : 0.013366 
+Working on problem size N=8192 
+ Elapsed time is : 0.0543675 
+Working on problem size N=16384 
+ Elapsed time is : 0.216577 
+
+
+OpenMP Vector-Matrix Multiplication
+Static Thread Scheduling
+T = 1
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.0084445 
+Working on problem size N=2048 
+ Elapsed time is : 0.0260397 
+Working on problem size N=4096 
+ Elapsed time is : 0.0891222 
+Working on problem size N=8192 
+ Elapsed time is : 0.322143 
+Working on problem size N=16384 
+ Elapsed time is : 1.22279
+
+T = 2  
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00495479 
+Working on problem size N=2048 
+ Elapsed time is : 0.0135341 
+Working on problem size N=4096 
+ Elapsed time is : 0.045388 
+Working on problem size N=8192 
+ Elapsed time is : 0.162727 
+Working on problem size N=16384 
+ Elapsed time is : 0.614793 
+
+T = 4
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00378109 
+Working on problem size N=2048 
+ Elapsed time is : 0.00681303 
+Working on problem size N=4096 
+ Elapsed time is : 0.0228169 
+Working on problem size N=8192 
+ Elapsed time is : 0.0814659 
+Working on problem size N=16384 
+ Elapsed time is : 0.307819 
+
+T = 8
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00371544 
+Working on problem size N=2048 
+ Elapsed time is : 0.00356864 
+Working on problem size N=4096 
+ Elapsed time is : 0.0115675 
+Working on problem size N=8192 
+ Elapsed time is : 0.0409575 
+Working on problem size N=16384 
+ Elapsed time is : 0.15461 
+
+T = 16
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00509413 
+Working on problem size N=2048 
+ Elapsed time is : 0.00191315 
+Working on problem size N=4096 
+ Elapsed time is : 0.0058977 
+Working on problem size N=8192 
+ Elapsed time is : 0.0207311 
+Working on problem size N=16384 
+ Elapsed time is : 0.0773457 
+
+T = 32
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00877347 
+Working on problem size N=2048 
+ Elapsed time is : 0.00431386 
+Working on problem size N=4096 
+ Elapsed time is : 0.0031877 
+Working on problem size N=8192 
+ Elapsed time is : 0.0106654 
+Working on problem size N=16384 
+ Elapsed time is : 0.0395025 
+
+T = 64
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.0149637 
+Working on problem size N=2048 
+ Elapsed time is : 0.00592867 
+Working on problem size N=4096 
+ Elapsed time is : 0.0118562 
+Working on problem size N=8192 
+ Elapsed time is : 0.0218847 
+Working on problem size N=16384 
+ Elapsed time is : 0.0201267 
+
+
+Dynamic Thread Scheduling:
+
+T = 1
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00850337 
+Working on problem size N=2048 
+ Elapsed time is : 0.0258818 
+Working on problem size N=4096 
+ Elapsed time is : 0.0890545 
+Working on problem size N=8192 
+ Elapsed time is : 0.322221 
+Working on problem size N=16384 
+ Elapsed time is : 1.22339 
+
+T = 2
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.0049495 
+Working on problem size N=2048 
+ Elapsed time is : 0.013486 
+Working on problem size N=4096 
+ Elapsed time is : 0.0453626 
+Working on problem size N=8192 
+ Elapsed time is : 0.163246 
+Working on problem size N=16384 
+ Elapsed time is : 0.614773 
+srun: Job 63057749 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 63057749
+
+T = 4
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00387519 
+Working on problem size N=2048 
+ Elapsed time is : 0.00678587 
+Working on problem size N=4096 
+ Elapsed time is : 0.0228293 
+Working on problem size N=8192 
+ Elapsed time is : 0.0815869 
+Working on problem size N=16384 
+ Elapsed time is : 0.307404 
+
+T = 8
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00355334 
+Working on problem size N=2048 
+ Elapsed time is : 0.00354701 
+Working on problem size N=4096 
+ Elapsed time is : 0.0115305 
+Working on problem size N=8192 
+ Elapsed time is : 0.0409486 
+Working on problem size N=16384 
+ Elapsed time is : 0.154315 
+
+T = 16
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00491259 
+Working on problem size N=2048 
+ Elapsed time is : 0.00196851 
+Working on problem size N=4096 
+ Elapsed time is : 0.00597139 
+Working on problem size N=8192 
+ Elapsed time is : 0.0206897 
+Working on problem size N=16384 
+ Elapsed time is : 0.077548 
+
+T = 32
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.00894032 
+Working on problem size N=2048 
+ Elapsed time is : 0.00422705 
+Working on problem size N=4096 
+ Elapsed time is : 0.00326015 
+Working on problem size N=8192 
+ Elapsed time is : 0.0105747 
+Working on problem size N=16384 
+ Elapsed time is : 0.0395554 
+
+T = 64
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+ Elapsed time is : 0.0147919 
+Working on problem size N=2048 
+ Elapsed time is : 0.00585922 
+Working on problem size N=4096 
+ Elapsed time is : 0.0115717 
+Working on problem size N=8192 
+ Elapsed time is : 0.0216075 
+Working on problem size N=16384 
+ Elapsed time is : 0.0201811 
